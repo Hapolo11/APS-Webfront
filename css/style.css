@@ -56,7 +56,7 @@ body{
     color: white;
     background-image: url("../images/fabrica.png");
     font-family: "Montserrat Classic", sans-serif;
-    height: 800px;
+    min-height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +78,7 @@ body{
 .main{
     display: flex;
     justify-content: center;
-    height: 800px;
+    min-height: 800px;
 }
 .main1{
   background-color: #000000;
@@ -209,20 +209,7 @@ a#btn-2:hover{
     color: white;
     transform: rotateY(180deg);
   }
-  .flip-card-back a{
-    color: black;
-    text-decoration: none;
-    background-color: #ccc;
-    padding: 10px;
-    border: solid 1px white;
-    border-radius: 20px;
-    font-family: "Montserrat Classic", sans-serif;
-    bottom: 1px;
-    
-  }
-  .flip-card-back a:hover{
-    background-color: #535353;
-  }
+
  .contato{
   display: flex;
   height: 400px;
