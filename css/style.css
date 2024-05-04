@@ -56,7 +56,7 @@ body{
     color: white;
     background-image: url("../images/fabrica.png");
     font-family: "Montserrat Classic", sans-serif;
-    min-height: 800px;
+    height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +78,7 @@ body{
 .main{
     display: flex;
     justify-content: center;
-    min-height: 800px;
+    height: 800px;
 }
 .main1{
   background-color: #000000;
