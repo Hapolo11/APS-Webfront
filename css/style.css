@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,1000;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,1000;1,900&display=swap');
 *{
     box-sizing: border-box;
 }
 body{
     height: 2400px;
-    margin: 0;
+    margin: 0%;
 }
 
 .navbar{
@@ -56,7 +56,7 @@ body{
     color: white;
     background-image: url("../images/fabrica.png");
     font-family: "Montserrat Classic", sans-serif;
-    height: 800px;
+    height: 1000px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,14 +78,14 @@ body{
 .main{
     display: flex;
     justify-content: center;
-    height: 800px;
+    height: 1000px;
 }
 .main1{
   background-color: #000000;
 }
 /* card normal*/
 .card{
-    font-family: "Poppins", sans-serif;;
+    font-family: "Poppins", sans-serif;
     margin: 50px;
     background-image: linear-gradient( 90deg ,#000000,#737373);
     color: white;
@@ -140,7 +140,7 @@ a#btn-2:hover{
 }
 .area-texto{
   height: 200px;
-  width: 800px;
+  width: 1000px;
   
 
 }
@@ -268,6 +268,89 @@ button:hover {
   border-radius: 5px;
 
   padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+ 
+}
+.main3{
+  background: #000000;
+  padding: 20px;
+
+}
+.main3 h1{
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.row {
+  margin: 8px -16px;
+
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.content:hover{
+  background: #ddd;
+}
+.content img{
+  height:250px ;
+  width: 100%;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 36px;
+  border-radius:20px ;
+  background: #fff;
+  color: #000000;
+ border: 2px solid  white;
+  cursor: pointer;
+  margin-left: 20px;
+}
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+ 
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #000000;
+  border: white solid 1px;
+   color: white;
+   padding: 16px 42px;
 }
 
 

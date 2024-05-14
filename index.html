@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -109,15 +109,98 @@
 </div>
 </section>
 </article>
+<section class="main3">
+<h1>PORTFOLIOS da equipe</h1>
+<!-- Filtros do portfolio -->
+
+<div id="myBtnContainer">
+<button class="btn active" onclick="filterSelection('all')"> Mostrar Portfolio</button>
+<button class="btn" onclick="filterSelection('hapolo')"> Hapolo</button>
+<button class="btn" onclick="filterSelection('caio')"> Caio</button>
+<button class="btn" onclick="filterSelection('david')"> David</button>
+</div>
+
+<!-- Coluna de Hapolo -->
+<div class="row">
+<div class="column hapolo">
+<div class="content">
+  <a href="sites/curriculo_hapolo/index.html"><img src="images/curriculo-img.png" alt="curriculo hapolo"></a>
+  <h4>Curriculo hapolo</h4>
+  <p>Lorem ipsum dolor..</p>
+</div>
+</div>
+<div class="column hapolo">
+<div class="content">
+  <a href="sites/GymFusion/index.html"><img src="images/gymfusion-img.png" alt="site de david"></a>
+  <h4>GymFusion</h4>
+  <p>protótipo de site de academia</p>
+</div>
+</div>
+<div class="column hapolo">
+<div class="content">
+  <a href="sites/agência fake/index.html"><img src="images/Agencia.png" alt="teste de site de agencia feito por hapolo"></a>
+  <h4>Agencia fake</h4>
+  <p>teste de criação de site de agência responsivo</p>
+</div>
+</div>
+<!-- Coluna de caio -->
+<div class="column caio">
+<div class="content">
+  <a href="sites/curriculo_caio/index.html"><img src="images/curriculo-caio.png" alt="curriculo de caio"></a>
+  <h4>curriculo caio</h4>
+  <p>Principais competencias de caio</p>
+</div>
+</div>
+<div class="column caio">
+<div class="content">
+  <a href="sites/!faculnubank/index.html"><img src="images/nubank-caio.png" alt="prototipo da nubank feito por caio"></a>
+  <h4>Protótipo Nubank</h4>
+  <p>blablablablabalbal</p>
+</div>
+</div>
+<div class="column caio">
+<div class="content">
+  <a href="sites/!skyline/index.html"><img src="images/skyline-img.png" alt="teste de hover feito por caio"></a>
+  <h4>Skyline</h4>
+  <p>Lorem ipsum dolor..</p>
+</div>
+</div>
+<!-- Coluna de david -->
+<div class="column david">
+<div class="content">
+  <img src="images/pexels-august-de-richelieu-4427959.jpg" alt="site de david">
+  <h4>popopo</h4>
+  <p>Lorem ipsum dolor..</p>
+</div>
+</div>
+<div class="column david">
+<div class="content">
+  <img src="images/pexels-august-de-richelieu-4427959.jpg" alt="site de david">
+  <h4>pipipi</h4>
+  <p>Lorem ipsum dolor..</p>
+</div>
+</div>
+<div class="column david">
+<div class="content">
+  <img src="images/pexels-august-de-richelieu-4427959.jpg" alt="site de david">
+  <h4>popopo</h4>
+  <p>Lorem ipsum dolor..</p>
+</div>
+</div>
+<!-- END GRID -->
+</div>
+</section>
+
+
 <footer>
   <div class="area-texto contato">
     <h1>Contate-nos</h1>
     <h2>nosso email de contato é <br>
       email@email.com.br</h2>
       <p>
-        <img src="images/twitter.png" class="rede">
-        <img src="images/instagram.png" class="rede">
-        <img src="images/facebook.png" class="rede">
+        <img src="images/twitter.png" class="rede" alt="logo do twitter">
+        <img src="images/instagram.png" class="rede"alt="logo do instagram">
+        <img src="images/facebook.png" class="rede"alt="logo do facebook">
       </p>
   
   </div>
@@ -136,6 +219,7 @@
     <textarea id="subject" name="subject"  style="height:200px"></textarea>
     <button>Enviar</button>
   </form>
+  <script src="javascript.js"> </script>
 </div>
 </footer>
 </body>
