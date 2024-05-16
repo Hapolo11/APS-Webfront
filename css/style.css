@@ -248,6 +248,17 @@ input[type=text], select, textarea {
   resize: vertical 
 }
 
+input[type=email], select, textarea {
+  background-color: #e2e2e2;
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
 button {
   background-color: #848484;
   color: white;
@@ -335,7 +346,7 @@ h1 {
   padding: 12px 36px;
   border-radius:20px ;
   background: #fff;
-  color: #000000;
+  color: #000000  ;
  border: 2px solid  white;
   cursor: pointer;
   margin-left: 20px;
@@ -352,5 +363,9 @@ h1 {
    color: white;
    padding: 16px 42px;
 }
+.error {
+    color: red;
+    font-weight: bold;
+  }
 
 

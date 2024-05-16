@@ -12,19 +12,18 @@
            <img src="images/logo.png" alt="logo da página" height="100px">
         </div>
         <div class="menu">
-            <a href="#">Principal</a>
-            <a href="#">Quem somos</a>
-            <a href="#">Portfólios</a>
-            <a id="btn-1" href="#">Contato</a>
+            <a href="#principal">Principal</a>
+            <a href="#quem_somos">Quem somos</a>
+            <a href="#portifolio">Portfólios</a>
+            <a id="btn-1" href="#orcamentoForm">Contato</a>
         </div>
 </nav>
 
 <div class="header"> 
     <h1>o futuro da <br>automação se <br>encontra aqui</h1>
-    <h2>Automatizando o Futuro,<br> Simplificando o Presente.</h2>   
-
+    <h2>Automatizando o Futuro,<br> Simplificando o Presente.</h2> 
 </div>
-<div class="main main1">
+<div class="main main1" id="principal">
     <div class="card1 card">
         <h1>Desenvolvimento de Software:</h1>
         <p>Desenvolvimento personalizado de software para atender às necessidades específicas de automação da sua empresa.</p>
@@ -33,7 +32,7 @@
             <li>Flexibilidade e Escalabilidade</li>
             <li>Eficiência Operacional</li>
         </ul>
-        <a href="" id="btn-2">Consultar planos <button><img src="images/seta-direita.png" alt="setinha"></button></a>
+        <a href="sites/!orçamento/index.html" id="btn-2">Consultar planos <button><img src="images/seta-direita.png" alt="setinha"></button></a>
     </div>
     <div class="card2 card">
         <h1>Automação Residencial:</h1>
@@ -43,7 +42,7 @@
             <li>Redução de erros e omissões</li>
             <li>Tomada de decisão baseada em dados</li>
         </ul>
-        <a href="" id="btn-2">Consultar planos <button><img src="images/seta-direita.png" alt="setinha"></button></a>
+        <a href="sites/!orçamento/index.html" id="btn-2">Consultar planos <button><img src="images/seta-direita.png" alt="setinha"></button></a>
     </div>
     <div class="card3 card">
         <h1>Internet das coisas(IoT):</h1>
@@ -53,12 +52,12 @@
         <li>Controle Remoto</li>
         <li>Otimização de Recursos</li>
     </ul>
-    <a href="" id="btn-2">Consultar planos <button><img src="images/seta-direita.png" alt="setinha"></button></a>
+    <a href="sites/!orçamento/index.html" id="btn-2">Consultar planos <button><img src="images/seta-direita.png" alt="setinha"></button></a>
     </div>
 </div>
 <!-- seção com os cards giratórios-->
 
-<article class="main main2">
+<article class="main main2" id="quem_somos">
   <section class="area-texto">
    <h2>Na TechAutomate Solutions, estamos na vanguarda da revolução digital, capacitando empresas de todos os setores a alcançarem seu máximo potencial através da automação inteligente e da inovação tecnológica.</h2> 
 
@@ -109,7 +108,7 @@
 </div>
 </section>
 </article>
-<section class="main3">
+<section class="main3" id="portifolio">
 <h1>PORTFOLIOS da equipe</h1>
 <!-- Filtros do portfolio -->
 
@@ -205,20 +204,23 @@
   
   </div>
 <div class="container">
-  <form>
+  <form id="orcamentoform">
 
     <label for="fname">Nome</label>
     <input type="text" id="fname" name="nome" >
-
+    <span id="nomeErro" class="error"></span><br> <!-- Mensagem de erro embaixo do campo -->
     <label for="email">email</label>
     <input type="text" id="email" name="email" >
+    <span id="emailErro" class="error"></span><br> <!-- Mensagem de erro embaixo do campo -->
     <label for="email">assunto</label>
     <input type="text" id="email" name="email" >
-
+    <span id="mensagemErro" class="error"></span><br> <!-- Mensagem de erro embaixo do campo -->
     <label for="subject">Mensagem</label>
     <textarea id="subject" name="subject"  style="height:200px"></textarea>
-    <button>Enviar</button>
+    <button type="button">Enviar</button>
   </form>
+
+  
   <script src="javascript.js"> </script>
 </div>
 </footer>

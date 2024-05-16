@@ -1,4 +1,4 @@
-filterSelection("all") // Execute the function and show all columns
+filterSelection("all") // Executa 
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
@@ -10,7 +10,7 @@ function filterSelection(c) {
   }
 }
 
-// Show filtered elements
+// mostra os elementos filtrados
 function w3AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -22,7 +22,7 @@ function w3AddClass(element, name) {
   }
 }
 
-// Hide elements that are not selected
+// esconde os elementos uqe não estão sendo utilizados
 function w3RemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -34,7 +34,7 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-// Add active class to the current button (highlight it)
+// adiciona a classe ativo ao botão que está sendo utilizado
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
@@ -44,3 +44,35 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+//Java Script forms
+function validarForm() {
+  var nome = document.getElementById("nome").value;
+  var email = document.getElementById("email").value;
+  var mensagem = document.getElementById("mensagem").value;
+  var nomeErro = document.getElementById("nomeErro");
+  var emailErro = document.getElementById("emailErro");
+  var mensagemErro = document.getElementById("mensagemErro");
+  
+  // Limpar mensagens de erro anteriores
+  nomeErro.innerHTML = "";
+  emailErro.innerHTML = "";
+  mensagemErro.innerHTML = "";
+  
+  if (nome === "" || email === "" || mensagem === "") {
+    if (nome === "") {
+      nomeErro.innerHTML = 'Por favor, preencha o campo "Nome".';
+    }
+    if (email === "") {
+      emailErro.innerHTML = 'Por favor, preencha o campo "Email".';
+    }
+    if (mensagem === "") {
+      mensagemErro.innerHTML = 'Por favor, preencha o campo "Mensagem".';
+    }
+  }
+  
+  else {
+    // Simular envio do formulário
+    alert("Formulário enviado com sucesso!");
+  }
+  
+  }
