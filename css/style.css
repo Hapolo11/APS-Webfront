@@ -201,6 +201,7 @@ a#btn-2:hover{
     margin-top: 20px;
     width:250px;
     height:200px;
+    border-radius: 15px;
   }
   
   /* estilo para o fundo*/

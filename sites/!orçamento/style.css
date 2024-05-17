@@ -5,39 +5,48 @@
 .error {
     color: red;
     font-weight: bold;
+    font-size: 14px;
   }
-  input[type=text], select, textarea {
-    background-color: #e2e2e2;
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
+    box-sizing: border-box;
   }
-  
-  input[type=email], select, textarea {
-    background-color: #e2e2e2;
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px;
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
-  }
-  
   button {
-    background-color: #848484;
+    background-color: #000000;
     color: white;
-    padding: 12px 20px;
+    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
   }
-  
-  
   button:hover {
     background-color: #535353;
   }
